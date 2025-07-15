@@ -1,0 +1,10 @@
+# some more ls aliases
+alias ls='eza'
+alias la='eza -la'
+alias ll='eza -lhF --git'      # รายละเอียดแบบอ่านง่าย + git status
+alias lt='eza --tree'          # แสดงเป็น tree
+alias l='eza -la --icons'      # แสดงทั้งหมด + icon (ถ้า terminal รองรับ)
+# Pyenv setup
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv virtualenv-init -)"
